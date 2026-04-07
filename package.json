@@ -1,0 +1,11 @@
+{
+  "name": "tok2",
+  "version": "1.0.0",
+  "description": "Design tokens pipeline: Figma → Style Dictionary → CSS/JS/TS",
+  "scripts": {
+    "build": "style-dictionary build --config sd.config.js"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.9.0"
+  }
+}
