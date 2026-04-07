@@ -1,0 +1,7 @@
+{
+  "figmaFile": "https://www.figma.com/design/uKkZkyJQUzKE33GgsZCd7s/Teste-Figma-mcp-v2",
+  "include": [
+    "src/**/*.figma.ts"
+  ],
+  "parser": "html"
+}
