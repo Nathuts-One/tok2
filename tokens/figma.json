@@ -1,0 +1,56 @@
+{
+  "color": {
+    "brand": {
+      "primary": {
+        "$value": "#0066ff",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "#6b21a8",
+        "$type": "color"
+      }
+    },
+    "neutral": {
+      "100": {
+        "$value": "#f5f5f5",
+        "$type": "color"
+      },
+      "900": {
+        "$value": "#171717",
+        "$type": "color"
+      }
+    },
+    "text": {
+      "brand": {
+        "$value": "#0066ff",
+        "$type": "color"
+      },
+      "primary": {
+        "$value": "#171717",
+        "$type": "color"
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": "#0066ff",
+        "$type": "color"
+      }
+    },
+    "background": {
+      "default": {
+        "$value": "#f5f5f5",
+        "$type": "color"
+      },
+      "inverse": {
+        "$value": "#171717",
+        "$type": "color"
+      }
+    }
+  },
+  "button": {
+    "background": {
+      "$value": "#0066ff",
+      "$type": "color"
+    }
+  }
+}
