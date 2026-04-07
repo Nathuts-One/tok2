@@ -1,0 +1,15 @@
+{
+  "color": {
+    "background": {
+      "default": { "value": "{color.neutral.100}", "type": "color" },
+      "inverse": { "value": "{color.neutral.900}", "type": "color" }
+    },
+    "text": {
+      "primary": { "value": "{color.neutral.900}", "type": "color" },
+      "brand": { "value": "{color.brand.primary}", "type": "color" }
+    },
+    "action": {
+      "primary": { "value": "{color.brand.primary}", "type": "color" }
+    }
+  }
+}
