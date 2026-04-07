@@ -2,12 +2,17 @@
   "name": "tok2",
   "version": "1.0.0",
   "type": "module",
-  "description": "Design tokens pipeline: Figma → Style Dictionary → CSS/JS/TS",
+  "description": "Design tokens + Web Components + Figma Code Connect",
   "scripts": {
-    "build": "node sd.config.js"
+    "build": "node sd.config.js",
+    "sync": "node scripts/figma-sync.mjs",
+    "figma:connect": "figma connect",
+    "figma:publish": "figma connect publish",
+    "figma:unpublish": "figma connect unpublish"
   },
   "devDependencies": {
     "style-dictionary": "^4.0.0",
-    "@tokens-studio/sd-transforms": "^0.16.0"
+    "@figma/code-connect": "^1.0.0",
+    "typescript": "^5.0.0"
   }
 }
