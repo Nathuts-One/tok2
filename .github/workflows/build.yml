@@ -16,10 +16,11 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
-      - run: npm ci
-      - run: npx style-dictionary build --config sd.config.js
+      - run: npm install
+
+      - run: node sd.config.js
 
       - name: Commit dist/ back to repo
         run: |
