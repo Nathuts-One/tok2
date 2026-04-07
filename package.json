@@ -1,11 +1,13 @@
 {
   "name": "tok2",
   "version": "1.0.0",
+  "type": "module",
   "description": "Design tokens pipeline: Figma → Style Dictionary → CSS/JS/TS",
   "scripts": {
-    "build": "style-dictionary build --config sd.config.js"
+    "build": "node sd.config.js"
   },
   "devDependencies": {
-    "style-dictionary": "^3.9.0"
+    "style-dictionary": "^4.0.0",
+    "@tokens-studio/sd-transforms": "^0.16.0"
   }
 }
