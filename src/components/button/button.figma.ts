@@ -18,19 +18,44 @@ figma.connect(
         MD: 'md',
         LG: 'lg',
       }),
-      disabled: figma.enum('State', {
-        Disabled: true,
-        Default:  false,
-        Hover:    false,
-        Pressed:  false,
-      }),
     },
 
-    example: ({ label, variant, size, disabled }) => html`
+    example: ({ label, variant, size }) => html`
       <ds-button
         variant="${variant}"
         size="${size}"
-        ${disabled ? 'disabled' : ''}
+      >${label}</ds-button>
+    `,
+  }
+);
+
+// Disabled state — add the "disabled" attribute when State=Disabled in Figma
+figma.connect(
+  'https://www.figma.com/design/uKkZkyJQUzKE33GgsZCd7s/Teste-Figma-mcp-v2?node-id=19-2',
+  {
+    imports: ["import 'tok2/button'"],
+    variant: { 'State': 'Disabled' },
+
+    props: {
+      label:   figma.string('Label'),
+      variant: figma.enum('Style', {
+        Primary:   'primary',
+        Secondary: 'secondary',
+        Outline:   'outline',
+        Ghost:     'ghost',
+      }),
+      size: figma.enum('Size', {
+        SM: 'sm',
+        MD: 'md',
+        LG: 'lg',
+      }),
+    },
+
+    example: ({ label, variant, size }) => html`
+      <ds-button
+        variant="${variant}"
+        size="${size}"
+        disabled
       >${label}</ds-button>
     `,
   }
