@@ -1,0 +1,9 @@
+{
+  "button": {
+    "padding": {
+      "horizontal": { "value": "{spacing.md}", "type": "spacing" },
+      "vertical": { "value": "{spacing.sm}", "type": "spacing" }
+    },
+    "background": { "value": "{color.action.primary}", "type": "color" }
+  }
+}
